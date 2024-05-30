@@ -2373,3 +2373,126 @@ footer {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px); /* Adjust for navbar height */
+  padding-top: 80px; /* Adjust for navbar height */
+}
+
+.auth-form {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.auth-form h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+  color: #010103;
+}
+
+.auth-form input {
+  padding: 1.2rem 1.3rem;
+  font-size: 1.5rem;
+  color: #ababab;
+  font-family: "Rubik", sans-serif;
+  border: 1px solid #ccd7e6;
+  border-radius: 3px;
+  font-weight: 400;
+  outline: none;
+}
+
+.auth-form button {
+  padding: 1.8rem 3rem;
+  font-size: 1.6rem;
+  background-color: #ff4d30;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  transition: all 0.3s;
+}
+
+.auth-form button:hover {
+  background-color: #fa4226;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.6);
+}
+
+.auth-form p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.auth-form a {
+  color: #ff4d30;
+  text-decoration: none;
+}
+
+.auth-form a:hover {
+  text-decoration: underline;
+}
+.auth-page, .orders-page, .payment-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  padding-top: 80px;
+}
+
+.auth-form, .orders-page .container, .payment-page .container {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.auth-form h2, .orders-page h2, .payment-page h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+  color: #010103;
+}
+
+.auth-form input, .payment-page input {
+  padding: 1.2rem 1.3rem;
+  font-size: 1.5rem;
+  color: #ababab;
+  font-family: "Rubik", sans-serif;
+  border: 1px solid #ccd7e6;
+  border-radius: 3px;
+  font-weight: 400;
+  outline: none;
+}
+
+.auth-form button, .payment-page button {
+  padding: 1.8rem 3rem;
+  font-size: 1.6rem;
+  background-color: #ff4d30;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  transition: all 0.3s;
+}
+
+.auth-form button:hover, .payment-page button:hover {
+  background-color: #fa4226;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.6);
+}

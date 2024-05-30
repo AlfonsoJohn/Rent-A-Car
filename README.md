@@ -3,10 +3,8 @@
 <h2>About the Project</h2>
 
 <p>A <b>car rental</b> website is an online platform that allows users to rent cars for personal or business use. The website offers a user-friendly interface for searching, comparing, and booking cars. Users can select from a diverse fleet of vehicles, each varying in make, model, size, and price. Additionally, the platform supports user registration and login, enabling a personalized experience where users can manage their bookings and view rental history.</p>
-<p>Credits for the design goes to <a href='https://xpeedstudio.com/'>XpeedStudio</a></p>
 
 👉 Live Demo: <a href='https://car-rental-ten.vercel.app/'>Live Demo</a>
-
 <h2>Technologies and Tools Used</h2>
 
 <p>This project is built using a variety of technologies and tools to ensure high performance and a good user experience:</p>
@@ -16,11 +14,10 @@
   <li><b>Backend:</b> Node.js, Express.js</li>
   <li><b>Database:</b> MongoDB</li>
   <li><b>Authentication:</b> JSON Web Tokens (JWT)</li>
-  <li><b>Hosting:</b> Vercel (Frontend), Heroku (Backend)</li>
+  <li><b>Hosting:</b> Azure</li>
   <li><b>Version Control:</b> Git, GitHub</li>
   <li><b>API Testing:</b> Postman</li>
 </ul>
-
 <h2>Screenshots of the Project 📸</h2>
 <br>
 <h3 align='center'>Home Page 🏡</h3>
