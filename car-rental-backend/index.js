@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 const authRoutes = require('./routes/auth');
 const rentalRoutes = require('./routes/rentals');
 
@@ -7,11 +8,9 @@ const app = express();
 
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
+app.use(cors()); // Enable CORS
 
-// Routes for authentication
 app.use('/auth', authRoutes);
-
-// Routes for rentals
 app.use('/rentals', rentalRoutes);
 
 // Start the server

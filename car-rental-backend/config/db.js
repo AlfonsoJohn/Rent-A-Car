@@ -1,19 +1,22 @@
+require('dotenv').config();
+
 const sql = require('mssql');
 
 const config = {
-  user: 'your_db_user',
-  password: 'your_db_password',
-  server: 'your_db_server.database.windows.net',
-  database: 'your_db_name',
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  server: process.env.DB_SERVER,
+  database: process.env.DB_DATABASE,
   options: {
     encrypt: true,
-  },
+    enableArithAbort: true
+  }
 };
 
 const poolPromise = new sql.ConnectionPool(config)
   .connect()
   .then(pool => {
-    console.log('Connected to SQL Server');
+    console.log('Connected to Azure SQL Database');
     return pool;
   })
   .catch(err => console.log('Database Connection Failed! Bad Config: ', err));
@@ -21,4 +24,3 @@ const poolPromise = new sql.ConnectionPool(config)
 module.exports = {
   sql, poolPromise
 };
-

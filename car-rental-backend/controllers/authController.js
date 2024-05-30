@@ -1,6 +1,7 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../models/user');
+const CarRental = require('../models/carRental');
 
 const register = async (req, res) => {
   const { username, password } = req.body;
@@ -20,5 +21,10 @@ const login = async (req, res) => {
   }
 };
 
-module.exports = { register, login };
+const getUserRentals = async (req, res) => {
+  const userId = req.user.id;
+  const rentals = await CarRental.findRentalsByUserId(userId);
+  res.json(rentals);
+};
 
+module.exports = { register, login, getUserRentals };

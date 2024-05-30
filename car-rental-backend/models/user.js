@@ -1,23 +1,20 @@
 const { sql, poolPromise } = require('../config/db');
 
-class User {
-  static async createUser(username, passwordHash) {
-    const pool = await poolPromise;
-    const result = await pool.request()
-      .input('username', sql.VarChar, username)
-      .input('passwordHash', sql.VarChar, passwordHash)
-      .query('INSERT INTO Users (username, passwordHash) VALUES (@username, @passwordHash)');
-    return result;
-  }
+const createUser = async (username, passwordHash) => {
+  const pool = await poolPromise;
+  await pool.request()
+    .input('username', sql.NVarChar, username)
+    .input('passwordHash', sql.NVarChar, passwordHash)
+    .query('INSERT INTO users (username, passwordHash) VALUES (@username, @passwordHash)');
+};
 
-  static async findUserByUsername(username) {
-    const pool = await poolPromise;
-    const result = await pool.request()
-      .input('username', sql.VarChar, username)
-      .query('SELECT * FROM Users WHERE username = @username');
-    return result.recordset[0];
-  }
-}
+const findUserByUsername = async (username) => {
+  const pool = await poolPromise;
+  const result = await pool.request()
+    .input('username', sql.NVarChar, username)
+    .query('SELECT * FROM users WHERE username = @username');
+  return result.recordset[0];
+};
 
-module.exports = User;
+module.exports = { createUser, findUserByUsername };
 
