@@ -4,7 +4,7 @@
 
 <p>A <b>car rental</b> website is an online platform that allows users to rent cars for personal or business use. The website offers a user-friendly interface for searching, comparing, and booking cars. Users can select from a diverse fleet of vehicles, each varying in make, model, size, and price. Additionally, the platform supports user registration and login, enabling a personalized experience where users can manage their bookings and view rental history.</p>
 
-👉 Live Demo: <a href='https://car-rental-ten.vercel.app/'>Live Demo</a>
+<!--- 👉 Live Demo: <a href='https://car-rental-ten.vercel.app/'>Live Demo</a> -->
 <h2>Technologies and Tools Used</h2>
 
 <p>This project is built using a variety of technologies and tools to ensure high performance and a good user experience:</p>
